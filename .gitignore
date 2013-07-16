@@ -1,2 +1,5 @@
 .DS_Store
 node_modules/
+spec/*
+backbone.statemanager.js
+backbone.statemanager.js.min
