@@ -1,0 +1,26 @@
+{
+  "name": "backbone.statemanager",
+  "version": "0.0.3",
+  "description": "Backbone module for adding states to objects",
+  "main": "backbone.statemanager.js",
+  "scripts": {
+    "prepublish": "grunt clean build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crashlytics/backbone.statemanager.git"
+  },
+  "author": "Patrick Camacho and Mark Roseboom",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "gitHead": "3055609294ca2fc94799487cc37f4f96f43a9aa6",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-haml": "~0.1.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-coffeelint": "0.0.7",
+    "grunt-contrib-uglify": "~0.2.2"
+  },
+  "dependencies": {}
+}

@@ -35,6 +35,10 @@ The latest stable releases can be found at the links:
 
 * Production: [backbone.statemanager.min.js](https://raw.github.com/crashlytics/backbone.statemanager/master/backbone.statemanager.min.js)
 
+## Building
+```npm install```
+```grunt build```
+
 ## Getting Started
 
 Backbone.StateManager constructor takes two arguments, a state object and an options object, but neither is required.Passed in states will be automatically added and the options are set as an instance property.

@@ -5,10 +5,24 @@ Distributed under MIT license
 http://github.com/crashlytics/backbone.statemanager
 ###
 
-Backbone.StateManager = ((Backbone, _) ->
+do ((root, factory) ->
+
+  # CommonJS export
+  if exports?
+    module.exports = factory require('backbone'), require('underscore')
+
+  # AMD module definition
+  # else if define?.amd
+  #   define? ['backbone', 'underscore'], factory
+
+  # Run in-browser
+  else
+    factory root.Backbone, root._
+
+) @, (Backbone, _) ->
 
   # Set our constructor - just a States object
-  StateManager = (states, @options = {}) ->
+  StateManager = Backbone.StateManager = (states, @options = {}) ->
     @states = new StateManager.States states
     @
 
@@ -148,4 +162,3 @@ Backbone.StateManager = ((Backbone, _) ->
     obj
 
   StateManager
-)(Backbone, _)
