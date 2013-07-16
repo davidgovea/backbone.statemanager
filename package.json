@@ -4,7 +4,7 @@
   "description": "Backbone module for adding states to objects",
   "main": "backbone.statemanager.js",
   "scripts": {
-    "prepublish": "grunt clean build"
+    "preinstall": "npm install && grunt build"
   },
   "repository": {
     "type": "git",
